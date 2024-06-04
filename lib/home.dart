@@ -9,12 +9,26 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: const Text(
           'Coffee App',
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
         backgroundColor: Colors.brown[500],
         centerTitle: true,
       ),
-      body: const Text('Hello World!'),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Container(
+            color: Colors.brown[200],
+            padding: const EdgeInsets.all(20),
+            child: const Text('Why I love coffee...'),
+          ),
+          Container(
+            color: Colors.brown[100],
+            padding: const EdgeInsets.all(20),
+            child: const Text('Coffee prefs'),
+          ),
+        ],
+      ),
     );
   }
 }
