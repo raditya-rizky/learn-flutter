@@ -3,7 +3,9 @@ import 'package:myapp/home.dart';
 
 void main() {
   runApp(
-    const MaterialApp(home: Home()),
+    const MaterialApp(
+      home: Home(),
+    ),
   );
 }
 
@@ -17,22 +19,22 @@ class Sandbox extends StatelessWidget {
         title: const Text('Sandbox'),
         backgroundColor: Colors.grey,
       ),
-      body: Column(
+      body: Row(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-            width: 100,
+            height: 100,
             color: Colors.red,
             child: const Text('one'),
           ),
           Container(
-            width: 200,
+            height: 200,
             color: Colors.green,
             child: const Text('two'),
           ),
           Container(
-            width: 300,
+            height: 300,
             color: Colors.blue,
             child: const Text('three'),
           ),
